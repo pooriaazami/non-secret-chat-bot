@@ -1,0 +1,38 @@
+File createdINFO:root:Bot started
+DEBUG:telegram.ext.dispatcher:Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x000001F73C7EEC48>
+INFO:apscheduler.scheduler:Scheduler started
+DEBUG:apscheduler.scheduler:Looking for jobs to run
+DEBUG:apscheduler.scheduler:No jobs; waiting until a job is added
+DEBUG:telegram.bot:Entering: get_me
+DEBUG:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Starting new HTTPS connection (1): api.telegram.org
+DEBUG:telegram.vendor.ptb_urllib3.urllib3.connectionpool:https://api.telegram.org:443 "POST /bot1600237318:AAGNe51T9bY-08uwPSA9v80ewkPsREkR3hM/getMe HTTP/1.1" 200 200
+DEBUG:telegram.bot:{'id': 1600237318, 'first_name': 'test_bot', 'is_bot': True, 'username': 'sercet_chat_test_bot', 'can_join_groups': True, 'can_read_all_group_messages': False, 'supports_inline_queries': True}
+DEBUG:telegram.bot:Exiting: get_me
+DEBUG:telegram.ext.updater:Bot:1600237318:dispatcher - started
+DEBUG:telegram.ext.updater:Bot:1600237318:updater - started
+DEBUG:telegram.ext.updater:Waiting for Dispatcher and polling to start
+DEBUG:telegram.ext.updater:Updater thread started (polling)
+DEBUG:telegram.ext.updater:Start network loop retry bootstrap del webhook
+DEBUG:telegram.bot:Entering: delete_webhook
+DEBUG:telegram.ext.dispatcher:Dispatcher started
+DEBUG:telegram.vendor.ptb_urllib3.urllib3.connectionpool:https://api.telegram.org:443 "POST /bot1600237318:AAGNe51T9bY-08uwPSA9v80ewkPsREkR3hM/deleteWebhook HTTP/1.1" 200 68
+DEBUG:telegram.bot:True
+DEBUG:telegram.bot:Exiting: delete_webhook
+DEBUG:telegram.ext.updater:Bootstrap done
+DEBUG:telegram.ext.updater:Start network loop retry getting Updates
+DEBUG:telegram.bot:Entering: get_updates
+DEBUG:telegram.vendor.ptb_urllib3.urllib3.connectionpool:https://api.telegram.org:443 "POST /bot1600237318:AAGNe51T9bY-08uwPSA9v80ewkPsREkR3hM/getUpdates HTTP/1.1" 200 318
+DEBUG:telegram.bot:Getting updates: [748014805]
+DEBUG:telegram.bot:[<telegram.update.Update object at 0x000001F73C839EC8>]
+DEBUG:telegram.bot:Exiting: get_updates
+DEBUG:telegram.bot:Entering: get_updates
+DEBUG:telegram.ext.dispatcher:Processing Update: {'update_id': 748014805, 'message': {'message_id': 1339, 'date': 1615545230, 'chat': {'id': 1254610943, 'type': 'private', 'username': 'pooriaazami', 'first_name': 'pooria azami'}, 'text': 'date', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 1254610943, 'first_name': 'pooria azami', 'is_bot': False, 'username': 'pooriaazami', 'language_code': 'en'}}}
+DEBUG:telegram.bot:Entering: send_message
+DEBUG:telegram.vendor.ptb_urllib3.urllib3.connectionpool:Starting new HTTPS connection (2): api.telegram.org
+DEBUG:telegram.vendor.ptb_urllib3.urllib3.connectionpool:https://api.telegram.org:443 "POST /bot1600237318:AAGNe51T9bY-08uwPSA9v80ewkPsREkR3hM/sendMessage HTTP/1.1" 200 378
+DEBUG:telegram.bot:Exiting: send_message
+DEBUG:telegram.vendor.ptb_urllib3.urllib3.connectionpool:https://api.telegram.org:443 "POST /bot1600237318:AAGNe51T9bY-08uwPSA9v80ewkPsREkR3hM/getUpdates HTTP/1.1" 200 23
+DEBUG:telegram.bot:No new updates found.
+DEBUG:telegram.bot:[]
+DEBUG:telegram.bot:Exiting: get_updates
+DEBUG:telegram.bot:Entering: get_updates
