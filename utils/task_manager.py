@@ -50,16 +50,19 @@ class FfgEncryption:
 
 def generate_link(telegram_id):
     cryptographer = FfgEncryption()
-    return f'https://t.me/sercet_chat_test_bot?start={cryptographer.encode(telegram_id)}'
+    return f'https://t.me/sercet_chat_bot?start={cryptographer.encode(telegram_id)}'
 
 
 def notify_user(bot: Bot, user: UserModel, mode, *args):
-    if mode == NotifyModes.RECEIVE_MESSAGE:
-        bot.send_message(chat_id=user.telegram_id, text='یک پیام جدید دارید 📫📫📫\n'
-                                                        'برای مشاده دستور /inbox را وارد کنید')
-    elif mode == NotifyModes.MESSAGE_READ:
-        res = bot.send_message(chat_id=user.telegram_id, text='خوانده شد', reply_to_message_id=args[1])
-        return res
+    try:
+        if mode == NotifyModes.RECEIVE_MESSAGE:
+            bot.send_message(chat_id=user.telegram_id, text='یک پیام جدید دارید 📫📫📫\n'
+                                                            'برای مشاده دستور /inbox را وارد کنید')
+        elif mode == NotifyModes.MESSAGE_READ:
+            res = bot.send_message(chat_id=user.telegram_id, text='خوانده شد', reply_to_message_id=args[1])
+            return res
+    except:
+        ...
 
 
 def send_advance_message(text, query, keyboard, replay_to_message_id, user, bot: Bot):
