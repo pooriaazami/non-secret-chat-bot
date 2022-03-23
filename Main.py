@@ -6,11 +6,7 @@ from telegram.ext import Updater, Dispatcher, CommandHandler, MessageHandler, Fi
 from utils.CommandHandlers import start, link, inbox, cancel, help_command
 from utils.MessageHandlers import text_message_handler, inbox_keyboard
 
-token = '1600237318:AAGNe51T9bY-08uwPSA9v80ewkPsREkR3hM'  # test
-
-
-# token = '1623432939:AAGo8LPXw5gwARFW8FriC8kNdbSf1IlORwk' # prime
-
+token = 'your-token'  # test
 
 def main():
     logger = logging.getLogger('sercet_chat_bot')
